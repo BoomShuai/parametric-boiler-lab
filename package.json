@@ -1,0 +1,25 @@
+{
+  "name": "parametric-boiler-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/core.test.mjs",
+    "test:browser": "playwright test",
+    "export": "node scripts/export.mjs"
+  },
+  "dependencies": {
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "vite": "8.3.8"
+  }
+}
